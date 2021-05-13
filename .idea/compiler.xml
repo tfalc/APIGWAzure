@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring-boot-jwt" />
+        <module name="APIGWAzure" />
+        <module name="spring-boot-azure" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="APIGWAzure" target="11" />
+      <module name="spring-boot-azure" target="11" />
+      <module name="spring-boot-jwt" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="APIGWAzure" options="-parameters" />
+      <module name="spring-boot-azure" options="-parameters" />
+      <module name="spring-boot-jwt" options="-parameters" />
+    </option>
+  </component>
+</project>
